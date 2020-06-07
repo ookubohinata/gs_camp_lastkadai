@@ -1,0 +1,143 @@
+/* 背景エフェクトstart↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+}
+
+.bg {
+  animation:slide 15s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:18s;
+}
+
+.bg3 {
+  animation-duration:20s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+/* 背景エフェクトend↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑ */
+
+/* メインタイトルレイアウト */
+#main_title{
+  text-align: center;
+  background: aquamarine;
+  margin: 0 auto;
+  width: 58%;
+  border-radius: 16px;
+  margin-top: 10px;
+}
+
+/* フォームレイアウト */
+.jumbotron {
+    text-align: center;
+}
+#title {
+    font-size: x-large;
+    background: aquamarine;
+    margin: 0 auto;
+    width: 34%;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+#nyuryoku_form{
+  width: 340px;
+  margin: auto;
+  text-align: right;
+  font-weight: 800;
+  margin-top: 15px;
+}
+#form_list{
+    margin-bottom: 30px;
+}
+#form_item{
+    margin: 10px 24px 0 0;
+}
+
+/* ページリンク */
+#navbar-brand{
+  font-weight: bolder
+}
+#link_str{
+  text-align: center;
+  margin-top: 12px;
+}
+/* 企業一覧文字 */
+#com_list{
+    font-size: x-large;
+    background: aquamarine;
+    margin: 0 auto;
+    width: 34%;
+    border-radius: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* footer部分 */
+#footer{
+    text-align: center;
+    padding: 6px 0;
+    background: aquamarine;
+    font-size: 16px;
+    margin: 0 auto;
+    width: 63%;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+#wrapper{
+    flex-direction: column-reverse;
+}
+#footer2{
+  display: flex;
+  flex-direction: column-reverse;
+  min-height: 18vh;
+}
+fooer{
+  margin-top: auto;
+}
+
+html, body{
+	margin: 0;	/* 余白の削除 */
+	padding: 0;	/* 余白の削除 */
+	height: 100%;	/* 縦の高さを100% */
+	width: 100%;	/* 横の幅を100% */
+}
+/* 全体を囲う大枠 */
+div#contents {
+	position: relative;		/* フッター部の配置用に定義 */
+	min-height: 100%;		/* 縦の表示領域を100% */
+}
